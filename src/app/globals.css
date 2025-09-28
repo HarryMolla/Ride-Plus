@@ -1,3 +1,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Keyframes for infinite scroll */
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Utility class for animation */
+.animate-infinite-scroll {
+  animation: infinite-scroll 25s linear infinite;
+}

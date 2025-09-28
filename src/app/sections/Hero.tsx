@@ -24,7 +24,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="w-full h-fit relative bg-gray-950 flex items-center justify-center">
+    <div className="w-full h-fit relative flex items-center justify-center">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 z-40 mt-10">
         <h1
           className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-snug text-transparent bg-clip-text 
@@ -96,7 +96,7 @@ const Hero = () => {
         </div>
       </div>
       {/* Background Light Rays */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-visible">
         <LightRays
           raysOrigin="top-center"
           raysColor="#ffffff"

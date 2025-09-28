@@ -1,12 +1,12 @@
 import React from 'react'
-
-import NavBar from './components/NavBar'
 import Hero from './sections/Hero'
+import OurCustomer from '@/OurCustomer'
 
 const page = () => {
   return (
-    <div>
+    <div className='grid grid-cols-1 justify-items-center bg-black'>
     <Hero/>
+    <OurCustomer/>
     </div>
   )
 }
