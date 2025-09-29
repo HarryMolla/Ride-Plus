@@ -13,7 +13,7 @@ const logos = [
 
 function Index() {
   return (
-    <div className="md:w-4/5 w-11/12 justify-items-center md:my-15 my-10">
+    <div className="md:w-4/5 w-11/12 justify-items-center md:my-15 mt-10">
       <div className=" px-4 mx-auto max-w-screen-xl text-center lg:py-5 lg:px-8 z-40">
         <h1
           className="mb-4 text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight leading-snug text-transparent bg-clip-text 
@@ -34,7 +34,7 @@ function Index() {
         <ul className="flex gap-2 sm:gap-10 md:gap-4 items-center justify-center [&_img]:max-w-none animate-infinite-scroll">
           {logos.concat(logos).map((logo, i) => (
             <li key={i}>
-              <img src={logo} alt="logo" className="md:h-20 h-10 w-auto" />
+              <img src={logo} alt="logo" className="md:h-20 h-15 w-auto" />
             </li>
           ))}
         </ul>

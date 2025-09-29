@@ -37,13 +37,13 @@ const steps: TimelineStep[] = [
     number: 2,
     title: "Earn and Exchange",
     description:
-      "AYou can also exchange your earned balance for credit, providing flexibility in managing your earnings.",
+      "You can also exchange your earned balance for credit, providing flexibility in managing your earnings.",
   },
   {
     number: 3,
-    title: "Earn and Exchange",
+    title: "Automatic Credit Management: ",
     description:
-      "You can also exchange your earned balance for credit, providing flexibility in managing your earnings.",
+      "The app will automatically update your credit balance after each transaction, so you always know where you stand.",
   },
   {
     number: 4,
@@ -55,9 +55,9 @@ const steps: TimelineStep[] = [
 
 const Learn = () => {
   return (
-    <div className="relative flex flex-col items-start gap-4 p-10 max-w-10/12 mx-auto md:h-screen my-20">
-      <div className="grid md:grid-cols-2 gap-8 justify-items-center">
-        <div className="grid gap-4">
+    <div className="relative flex flex-col items-start gap-4 py-0 px-5 md:max-w-10/12 mx-auto md:h-screen my-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+        <div className="order-2 md:order-1 grid gap-4">
           <div className="grid gap-2">
             <h1 className="text-gray-100 font-bold text-3xl">
               Flexible Credit Purchase (For Drivers)
@@ -74,13 +74,12 @@ const Learn = () => {
           <div className="relative flex flex-col items-start">
             {/* Vertical line */}
             <div
-              className="absolute left-[1.4rem] w-1 bg-gray-700 rounded"
-              style={{
-                top: "1.5rem", // Start at the center of the first circle
-                height: `calc(100% - 6rem)`, // End at the center of the last circle
-              }}
+              className="
+                      absolute left-[1.4rem] w-1 bg-white/10 rounded 
+                      top-[1.5rem] 
+                      h-[calc(100%-8.4rem)] md:h-[calc(100%-9rem)] lg:h-[calc(100%-8rem)]"
             >
-              <div className="absolute w-full h-8 bg-gradient-to-b from-transparent via-green-500 to-transparent animate-gradientMove rounded"></div>
+              <div className="absolute w-full h-8 bg-gradient-to-b from-transparent via-white to-transparent animate-gradientMove rounded"></div>
             </div>
             {/* Timeline steps */}
             {steps.map((step, idx) => (
@@ -99,17 +98,11 @@ const Learn = () => {
             ))}
           </div>
         </div>
-        <div>
-          <video
-        className="h-140 object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="./test 2.webm" type="video/webm" />
-        Your browser does not support the video tag.
-      </video>
+        <div className="order-1 md:order-2">
+          <video className="md:h-140 object-cover" autoPlay loop muted playsInline>
+            <source src="./test 2.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
