@@ -59,10 +59,10 @@ const Learn = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
         <div className="order-2 md:order-1 grid gap-4">
           <div className="grid gap-2">
-            <h1 className="text-gray-100 font-bold text-3xl">
+            <h1 className="text-gray-300 font-bold md:text-3xl text-2xl ">
               Flexible Credit Purchase (For Drivers)
             </h1>
-            <p className="text-gray-300">
+            <p className="text-gray-400">
               With Flexible Credit Purchase, drivers can effortlessly buy credit
               from their favorite bank or mobile money services. They can also
               exchange credit from their earnings, making it easier to keep
@@ -87,12 +87,12 @@ const Learn = () => {
                 key={idx}
                 className="grid grid-cols-[48px_1fr] items-start gap-4 relative mb-8"
               >
-                <Circle className="bg-gray-100">{step.number}</Circle>
+                <Circle className="bg-gray-300">{step.number}</Circle>
                 <div>
-                  <h1 className="text-gray-100 text-lg font-bold">
+                  <h1 className="text-gray-300 text-lg font-bold">
                     {step.title}
                   </h1>
-                  <p className="text-gray-300">{step.description}</p>
+                  <p className="text-gray-400">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -100,7 +100,7 @@ const Learn = () => {
         </div>
         <div className="order-1 md:order-2">
           <video className="md:h-140 object-cover" autoPlay loop muted playsInline>
-            <source src="./test 2.webm" type="video/webm" />
+            <source src="./perfect 1.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
         </div>
