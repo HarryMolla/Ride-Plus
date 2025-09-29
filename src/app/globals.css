@@ -15,3 +15,16 @@
 .animate-infinite-scroll {
   animation: infinite-scroll 25s linear infinite;
 }
+
+@keyframes gradientMove {
+          0% {
+            top: 0;
+          }
+          100% {
+            top: 100%;
+          }
+        }
+        .animate-gradientMove {
+          animation: gradientMove 2s linear infinite;
+        }
+        
