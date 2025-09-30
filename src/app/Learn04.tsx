@@ -10,7 +10,7 @@ const Circle = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "flex w-12 h-12 items-center justify-center rounded-full border-2 border-gray-400 bg-white font-bold shadow-md z-10",
+        "flex w-10 h-10 items-center justify-center rounded-full z-10 text-white font-medium",
         className
       )}
     >
@@ -46,7 +46,7 @@ const steps: TimelineStep[] = [
 
 const Learn04 = () => {
   return (
-    <div className="relative flex flex-col items-start gap-4 py-0 px-5 md:max-w-10/12 mx-auto md:h-fit mb-20">
+    <div className="relative flex flex-col items-start gap-4 py-0 px-5 md:max-w-10/12 mx-auto md:h-fit md:my-30 mt- mb-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="order-2 md:order-2 grid gap-4 h-fit">
           <div className="grid gap-2">
@@ -66,9 +66,9 @@ const Learn04 = () => {
             {/* Vertical line */}
             <div
               className="
-                      absolute left-[1.4rem] w-1 bg-white/10 rounded 
+                      absolute left-[1.2rem] w-0.5 bg-neutral-900 rounded 
                       top-[1.5rem] 
-                      h-[calc(100%-6.4rem)] md:h-[calc(100%-8rem)] lg:h-[calc(100%-6rem)]"
+                      h-[calc(100%-6.0rem)] md:h-[calc(100%-8rem)] lg:h-[calc(100%-6rem)]"
             >
               <div className="absolute w-full h-8 bg-gradient-to-t from-white to-transparent animate-gradientMove rounded-b-full"></div>
             </div>
@@ -78,7 +78,7 @@ const Learn04 = () => {
                 key={idx}
                 className="grid grid-cols-[48px_1fr] items-center gap-4 relative mb-8"
               >
-                <Circle className="bg-gray-300">{step.number}</Circle>
+                <Circle className="bg-neutral-800">{step.number}</Circle>
                 <div>
                   <h1 className="text-gray-300 text-lg font-bold">
                     {step.title}

@@ -10,7 +10,7 @@ const Circle = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "flex w-12 h-12 items-center justify-center rounded-full border-2 border-gray-400 bg-white font-bold shadow-md z-10",
+        "flex w-10 h-10 items-center justify-center rounded-full z-10 text-white font-medium",
         className
       )}
     >
@@ -68,7 +68,7 @@ const Learn03 = () => {
             {/* Vertical line */}
             <div
               className="
-                      absolute left-[1.4rem] w-1 bg-white/10 rounded 
+                      absolute left-[1.2rem] w-0.5 bg-neutral-900 rounded 
                       top-[1.5rem] 
                       h-[calc(100%-6.4rem)] md:h-[calc(100%-8rem)] lg:h-[calc(100%-6rem)]"
             >
@@ -80,7 +80,7 @@ const Learn03 = () => {
                 key={idx}
                 className="grid grid-cols-[48px_1fr] items-center gap-4 relative mb-8"
               >
-                <Circle className="bg-gray-300">{step.number}</Circle>
+                <Circle className="bg-neutral-800">{step.number}</Circle>
                 <div>
                   <h1 className="text-gray-300 text-lg font-bold">
                     {step.title}
