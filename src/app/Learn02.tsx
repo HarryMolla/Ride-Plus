@@ -29,37 +29,31 @@ interface TimelineStep {
 const steps: TimelineStep[] = [
   {
     number: 1,
-    title: "Loyalty Points will be rewarded after every trip.",
+    title: "Add and Confirm Bank Account",
     description:
-      "",
+      "As a driver, you can easily add your bank account details and confirm them for secure transactions.",
   },
   {
     number: 2,
-    title: "Navigate to the Ride Points page.",
+    title: "Select from Available Methods and Cashout",
     description:
-      "",
-  },
-  {
-    number: 3,
-    title: "Choose among the available redeem options and enjoy.",
-    description:
-      "",
+      "Choose your preferred cashout method and receive your funds instantly.",
   },
 ];
 
-const Learn03 = () => {
+const Learn02 = () => {
   return (
-    <div className="relative flex flex-col items-start gap-4 py-0 px-5 md:max-w-10/12 mx-auto md:h-fit mb-20">
+    <div className="relative flex flex-col items-start gap-4 py-0 px-5 md:max-w-10/12 mx-auto md:h-screen mb-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="order-2 md:order-1 grid gap-4 h-fit">
+        <div className="order-2 md:order-2 grid gap-4 h-fit">
           <div className="grid gap-2">
             <h1 className="text-gray-300 font-bold md:text-3xl text-2xl ">
-              Earn Rewards for Every Ride (For Drivers and Passengers)
+              Cash out (For Drivers)
             </h1>
             <p className="text-gray-400">
-              Passengers and drivers can now enjoy our Loyalty Points program!
-              Accumulate points with every trip and redeem them for exciting
-              rewards.
+              With Cashout, drivers can quickly and securely access their earned
+              balance, giving them immediate access to their hard-earned money
+              whenever they need it.
             </p>
           </div>
           <h1 className="text-gray-100 text-lg font-bold">How it Works</h1>
@@ -70,7 +64,7 @@ const Learn03 = () => {
               className="
                       absolute left-[1.4rem] w-1 bg-white/10 rounded 
                       top-[1.5rem] 
-                      h-[calc(100%-6.4rem)] md:h-[calc(100%-8rem)] lg:h-[calc(100%-6rem)]"
+                      h-[calc(100%-10.18rem)] md:h-[calc(100%-9rem)] lg:h-[calc(100%-6rem)]"
             >
               <div className="absolute w-full h-8 bg-gradient-to-t from-white to-transparent animate-gradientMove rounded-b-full"></div>
             </div>
@@ -78,20 +72,20 @@ const Learn03 = () => {
             {steps.map((step, idx) => (
               <div
                 key={idx}
-                className="grid grid-cols-[48px_1fr] items-center gap-4 relative mb-8"
+                className="grid grid-cols-[48px_1fr] items-start gap-4 relative mb-8"
               >
                 <Circle className="bg-gray-300">{step.number}</Circle>
                 <div>
                   <h1 className="text-gray-300 text-lg font-bold">
                     {step.title}
                   </h1>
-                  
+                  <p className="text-gray-400">{step.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-        <div className="order-1 md:order-2">
+        <div className="order-1 md:order-1">
           <video
             className="md:h-140 object-cover"
             autoPlay
@@ -99,7 +93,7 @@ const Learn03 = () => {
             muted
             playsInline
           >
-            <source src="./learn03.webm" type="video/webm" />
+            <source src="./learn02.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -108,4 +102,4 @@ const Learn03 = () => {
   );
 };
 
-export default Learn03;
+export default Learn02;
