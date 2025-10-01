@@ -55,7 +55,7 @@ const steps: TimelineStep[] = [
 
 const Learn06 = () => {
   return (
-    <div className="relative flex flex-col items-start gap-4 py-0 px-5 md:max-w-10/12 mx-auto md:h-screen my-20">
+    <div className="relative flex flex-col items-start gap-4 py-0 px-5 md:max-w-10/12 mx-auto md:h-screen md:my-20 mb-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
         <div className="order-2 md:order-2 grid gap-4">
           <div className="grid gap-2">
