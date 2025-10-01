@@ -8,6 +8,7 @@ import Learn04 from './Learn04'
 import Learn05 from './Learn05'
 import Learn06 from './Learn06'
 import Testemonial from './Testemonial'
+import Footer from './Footer'
 
 const page = () => {
   return (
@@ -21,6 +22,7 @@ const page = () => {
     <Learn05/>
     <Learn06/>
     <Testemonial/>
+    <Footer/>
     </div>
   )
 }
