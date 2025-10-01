@@ -57,7 +57,7 @@ const Learn06 = () => {
   return (
     <div className="relative flex flex-col items-start gap-4 py-0 px-5 md:max-w-10/12 mx-auto md:h-screen my-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
-        <div className="order-2 md:order-1 grid gap-4">
+        <div className="order-2 md:order-2 grid gap-4">
           <div className="grid gap-2">
             <h1 className="text-gray-300 font-bold md:text-3xl text-2xl ">
               Effortless Corporate Management
@@ -99,7 +99,7 @@ const Learn06 = () => {
             ))}
           </div>
         </div>
-        <div className="order-1 md:order-2">
+        <div className="order-1 md:order-1">
           <img src="./learn06.svg" alt="" className="md:h-140 object-cover" />
         </div>
       </div>
