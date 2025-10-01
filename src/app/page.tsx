@@ -7,6 +7,7 @@ import Learn02 from './Learn02'
 import Learn04 from './Learn04'
 import Learn05 from './Learn05'
 import Learn06 from './Learn06'
+import Testemonial from './Testemonial'
 
 const page = () => {
   return (
@@ -19,6 +20,7 @@ const page = () => {
     <Learn04/>
     <Learn05/>
     <Learn06/>
+    <Testemonial/>
     </div>
   )
 }

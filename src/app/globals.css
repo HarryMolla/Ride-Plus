@@ -27,4 +27,26 @@
         .animate-gradientMove {
           animation: gradientMove 2s linear infinite;
         }
-        
+
+@layer utilities {
+  /* Horizontal Marquee: Default (left-to-right) */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-100% / var(--repeat, 4) - var(--gap, 1rem) / var(--repeat, 4))); }
+  }
+
+  /* Horizontal Marquee: Reverse (right-to-left) */
+  @keyframes marquee-reverse {
+    from { transform: translateX(calc(-100% / var(--repeat, 4) - var(--gap, 1rem) / var(--repeat, 4))); }
+    to { transform: translateX(0); }
+  }
+
+
+  .animate-marquee {
+    animation: marquee var(--duration, 40s) linear infinite;
+  }
+
+  .animate-marquee-reverse {
+    animation: marquee-reverse var(--duration, 40s) linear infinite;
+  }
+}
