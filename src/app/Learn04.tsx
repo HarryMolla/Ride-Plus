@@ -1,6 +1,7 @@
 "use client";
 import React, { forwardRef } from "react";
 import { cn } from "@/lib/utils";
+import DelayedLoopVideo from "./components/DelayedLoopVideo";
 
 const Circle = forwardRef<
   HTMLDivElement,
@@ -50,7 +51,7 @@ const Learn04 = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="order-2 md:order-2 grid gap-4 h-fit">
           <div className="grid gap-2">
-            <h1 className="text-gray-300 font-bold md:text-3xl text-2xl ">
+            <h1 className="text-gray-200 font-bold md:text-3xl text-2xl ">
               Seamless Payment Options (For Passengers)
             </h1>
             <p className="text-gray-400">
@@ -89,16 +90,11 @@ const Learn04 = () => {
           </div>
         </div>
         <div className="order-1 md:order-1">
-          <video
+          <DelayedLoopVideo
+            src="./learn04.webm"
+            delay={1000}
             className="md:h-140 object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-          >
-            <source src="./learn04.webm" type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
+          />
         </div>
       </div>
     </div>
