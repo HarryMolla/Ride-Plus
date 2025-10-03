@@ -341,7 +341,7 @@ const NavBar = () => {
         <ul className="flex list-none gap-4 ">
           <li>
             <a
-              className="inline-flex items-center rounded-lg px-2 sm:px-3 py-2 text-[14px] sm:text-[15px] font-medium text-neutral-200 hover:bg-neutral-900 border border-neutral-900"
+              className="inline-flex items-center rounded-lg px-2 sm:px-3 py-2 text-[14px] sm:text-[15px] font-medium text-neutral-200 hover:bg-neutral-900 border border-neutral-800"
               href="#"
             >
               <Phone className="mr-2" size={18} />
@@ -350,7 +350,7 @@ const NavBar = () => {
           </li>
           <li>
             <a
-              className="relative inline-flex items-center rounded-lg px-2 sm:px-3 py-2 text-[14px] sm:text-[15px] font-medium text-neutral-200 hover:bg-neutral-900 border border-neutral-900"
+              className="relative inline-flex items-center rounded-lg px-2 sm:px-3 py-2 text-[14px] sm:text-[15px] font-medium text-neutral-200 hover:bg-neutral-900 border border-neutral-800"
               href="#"
             >
               <CarFront className="mr-2" size={18} />
