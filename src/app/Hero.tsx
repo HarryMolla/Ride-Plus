@@ -1,6 +1,6 @@
 "use client";
 import { ArrowDown } from "lucide-react";
-import LightRays from "../components/LightRays";
+import LightRays from "./components/LightRays";
 import { useState, useEffect } from "react";
 import { ShimmeringText } from "@/components/ui/shadcn-io/shimmering-text";
 
@@ -25,7 +25,7 @@ const Hero = () => {
 
   return (
     <div className="w-full h-fit relative flex items-center justify-center">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 z-40 mt-10">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 z-40 md:mt-30 mt-40">
         <h1
           className="mb-4 text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-snug text-transparent bg-clip-text 
            bg-gradient-to-r from-gray-400 via-white to-gray-400 "

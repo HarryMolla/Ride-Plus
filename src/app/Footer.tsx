@@ -16,12 +16,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 md:w-fit w-11/12 h-fit md:mb-10 m-5 md:mt-30 mt-25 rounded-2xl overflow-clip ">
+    <footer className="bg-neutral-950 border border-neutral-800 md:w-fit w-11/12 h-fit md:mb-10 m-5 md:mt-30 mt-25 rounded-2xl overflow-clip ">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:p-15 p-5 pb-8 relative">
-        <div className="bg-gradient-to-r from-transparent via-neutral-600 to-transparent h-0.5 absolute bottom-0 left-5 right-5 md:left-[60px] md:right-[60px]"></div>
+        <div className="bg-neutral-800 h-0.5 absolute bottom-0 left-5 right-5 md:left-[60px] md:right-[60px]"></div>
         <div className="space-y-4">
           <img src="./ride.svg" alt="Company Logo" className="h-16" />
-          <p className="text-gray-300 md:text-md text-md leading-relaxed">
+          <p className="text-gray-300 md:text-md text-md  max-w-2xs">
             Hybrid Designs PLC entered the RIDE hailing market in 2014 with a
             vision to make transportation in the capital safe, affordable and
             convenient through technology.
@@ -149,7 +149,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="bg-neutral-800 w-full md:px-15 px-5 py-6 md:flex grid gap-6 md:flex-cols-3 md:justify-between items-center justify-items-center">
+      <div className="bg-neutral-900 w-full md:px-15 px-5 py-6 md:flex grid gap-6 md:flex-cols-3 md:justify-between items-center justify-items-center">
         <p className="text-neutral-400 font-medium">
           Designed & Developed by{" "}
           <span>
@@ -178,7 +178,7 @@ const Footer = () => {
 
         <div className="flex items-center gap-4">
           <p className="md:text-md text-sm font-medium text-neutral-300">
-            follow us on
+            Follow us on
           </p>
           <div className="flex gap-2">
             <div className="p-2 border border-neutral-700 hover:bg-neutral-700 rounded-full">
