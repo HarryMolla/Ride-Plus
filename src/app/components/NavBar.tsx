@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { CarFront, ChevronDown, Phone, Menu, X } from "lucide-react";
+import { CarFront, ChevronDown, Phone, Menu, X, Link } from "lucide-react";
 import React, { useState, useEffect, useRef } from "react";
 
 const NavBar = () => {
@@ -155,7 +155,7 @@ const NavBar = () => {
           >
             <div className="grid grid-cols-1  w-200 md:grid-cols-2 gap-6 p-4 mx-auto">
               {/* <!-- Left Column: Single Large Card --> */}
-              <a
+              <Link
                 href="/"
                 className="flex flex-col w-full rounded-xl bg-gradient-to-b from-neutral-700 to-neutral-800/50 p-6 text-white"
               >
@@ -170,7 +170,7 @@ const NavBar = () => {
                   with a vision to make transportation in the capital safe,
                   affordable and convenient through technology.
                 </p>
-              </a>
+              </Link>
 
               {/* <!-- Right Column: Three Stacked Cards --> */}
               <div className="flex flex-col gap-2">
@@ -231,7 +231,7 @@ const NavBar = () => {
           >
             <div className="grid grid-cols-1  w-200 md:grid-cols-2 gap-6 p-4 mx-auto">
               {/* <!-- Left Column: Single Large Card --> */}
-              <a
+              <Link
                 href="/"
                 className="flex flex-col w-full rounded-xl bg-gradient-to-b from-neutral-700 to-neutral-800/50 p-6 text-white"
               >
@@ -246,7 +246,7 @@ const NavBar = () => {
                   technologies to transform entertainment through Sewasew
                   Multimedia with a team of 35+ engineers.
                 </p>
-              </a>
+              </Link>
 
               {/* <!-- Right Column: Three Stacked Cards --> */}
               <div className="flex flex-col gap-2">
