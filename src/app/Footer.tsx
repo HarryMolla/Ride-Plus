@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
 
             <div className="grid grid-cols-2 items-center w-fit gap-2">
-              <img src="ride plus.svg" alt="Creative" className="w-24" />
+              <img src="logo.svg" alt="Creative" className="w-24" />
               <div className="flex gap-2">
                 <div className="bg-neutral-800 p-3 rounded-xl hover:bg-neutral-700 transition">
                   <img src="./play.svg" alt="Play Store" className="h-6" />

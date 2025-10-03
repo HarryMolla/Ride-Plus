@@ -1,7 +1,6 @@
 import React from "react";
 
 const logos = [
-  "./creative.svg",
   "./aplha.svg",
   "./tirta.svg",
   "./reward.svg",
@@ -9,6 +8,7 @@ const logos = [
   "./ix.svg",
   "./ad.svg",
   "./swasew.svg",
+  "./creative.svg",
 ];
 
 function Index() {

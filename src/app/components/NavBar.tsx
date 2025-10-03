@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { CarFront, ChevronDown, Phone, Menu, X} from "lucide-react";
+import { CarFront, ChevronDown, Phone, Menu, X } from "lucide-react";
 import React, { useState, useEffect, useRef } from "react";
 
 const NavBar = () => {
@@ -124,7 +124,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="hidden md:flex absolute z-50 w-full bg-black/50 backdrop-blur-md justify-between items-center p-3 px-35 md:mx-30 mx-5 h-fit border border-neutral-900">
+      <nav className="hidden md:flex absolute z-50 w-full bg-neutral-950/50 backdrop-blur-lg justify-between items-center p-3 px-35 md:mx-30 mx-5 h-fit border-b-1 border-neutral-900">
         {/* Logo */}
         <img src="./logo.svg" alt="Logo" className="h-10" />
 
@@ -336,7 +336,7 @@ const NavBar = () => {
       </nav>
 
       {/* Mobile Navbar */}
-      <nav className="md:hidden absolute z-50 w-full h-fit bg-neutral-950 border border-neutral-800 p-3 flex items-center justify-between mx-50 rounded-2xl">
+      <nav className="md:hidden absolute z-50 w-full h-fit bg-neutral-950/50 backdrop-blur-lg border-b border-neutral-800 p-3 flex items-center justify-between mx-50">
         <img src="./logo.svg" alt="Logo" className="h-10" />
         <ul className="flex list-none gap-4 ">
           <li>
@@ -436,15 +436,13 @@ const NavBar = () => {
                     className="flex items-center gap-3 p-3 rounded-lg border border-neutral-900 hover:bg-neutral-800/50 transition-colors"
                   >
                     <img
-                      src="./ride business.svg"
+                      src="./ride capital.svg"
                       className="h-12 p-1 bg-neutral-800/50 rounded-md"
                     />
                     <div>
-                      <div className="text-white font-medium">
-                        RIDE Business
-                      </div>
+                      <div className="text-white font-medium">RIDE Capital</div>
                       <div className="text-neutral-400 text-sm">
-                        A Platform for all your business needs
+                        Buy cars and homes with flexible options.
                       </div>
                     </div>
                   </a>
@@ -453,15 +451,74 @@ const NavBar = () => {
                     className="flex items-center gap-3 p-3 rounded-lg border border-neutral-900 hover:bg-neutral-800/50 transition-colors"
                   >
                     <img
-                      src="./ride business.svg"
+                      src="./ride food.svg"
                       className="h-12 p-1 bg-neutral-800/50 rounded-md"
                     />
                     <div>
-                      <div className="text-white font-medium">
-                        RIDE Business
-                      </div>
+                      <div className="text-white font-medium">RIDE Food</div>
                       <div className="text-neutral-400 text-sm">
-                        A Platform for all your business needs
+                        Order food fast with Ride app, code 8294.
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </MobileAccordionItem>
+              <MobileAccordionItem title="Solutions">
+                <div className="flex flex-col gap-3 my-4">
+                  <a
+                    href="#"
+                    className="block p-3 rounded-lg bg-gradient-to-b from-neutral-700 to-neutral-800/50 "
+                  >
+                    <img src="./2f.svg" alt="" className="mb-4" />
+                    <p className="text-neutral-400 text-sm">
+                      TWOF Capital PLC, founded in June 2020, develops
+                      disruptive technologies to transform entertainment through
+                      Sewasew Multimedia with a team of 35+ engineers.
+                    </p>
+                  </a>
+                  <a
+                    href="#"
+                    className="flex items-center gap-3 p-3 rounded-lg border border-neutral-900 hover:bg-neutral-800/50 transition-colors"
+                  >
+                    <img
+                      src="./ride plus.svg"
+                      className="h-12 p-1 bg-neutral-800/50 rounded-md"
+                    />
+                    <div>
+                      <div className="text-white font-medium">RIDE Plus</div>
+                      <div className="text-neutral-400 text-sm">
+                        Flexible Credit Management for driver transactions.
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    className="flex items-center gap-3 p-3 rounded-lg border border-neutral-900 hover:bg-neutral-800/50 transition-colors"
+                  >
+                    <img
+                      src="./ride ad.svg"
+                      className="h-12 p-1 bg-neutral-800/50 rounded-md"
+                    />
+                    <div>
+                      <div className="text-white font-medium">RIDE Ad</div>
+                      <div className="text-neutral-400 text-sm">
+                        Promote your products on our websites.
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    className="flex items-center gap-3 p-3 rounded-lg border border-neutral-900 hover:bg-neutral-800/50 transition-colors"
+                  >
+                    <img
+                      src="./ride blog.svg"
+                      className="w-26 p-1 bg-neutral-800/50 rounded-md"
+                    />
+                    <div>
+                      <div className="text-white font-medium">RIDE Blog</div>
+                      <div className="text-neutral-400 text-sm">
+                        Discover the latest trends in business and technology on
+                        our blog.
                       </div>
                     </div>
                   </a>
