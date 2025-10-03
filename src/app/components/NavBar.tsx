@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { CarFront, ChevronDown, Phone, Menu, X, Link } from "lucide-react";
+import { CarFront, ChevronDown, Phone, Menu, X} from "lucide-react";
 import React, { useState, useEffect, useRef } from "react";
 
 const NavBar = () => {
@@ -155,8 +155,8 @@ const NavBar = () => {
           >
             <div className="grid grid-cols-1  w-200 md:grid-cols-2 gap-6 p-4 mx-auto">
               {/* <!-- Left Column: Single Large Card --> */}
-              <Link
-                href="/"
+              <a
+                href="#"
                 className="flex flex-col w-full rounded-xl bg-gradient-to-b from-neutral-700 to-neutral-800/50 p-6 text-white"
               >
                 <img
@@ -170,7 +170,7 @@ const NavBar = () => {
                   with a vision to make transportation in the capital safe,
                   affordable and convenient through technology.
                 </p>
-              </Link>
+              </a>
 
               {/* <!-- Right Column: Three Stacked Cards --> */}
               <div className="flex flex-col gap-2">
@@ -231,8 +231,8 @@ const NavBar = () => {
           >
             <div className="grid grid-cols-1  w-200 md:grid-cols-2 gap-6 p-4 mx-auto">
               {/* <!-- Left Column: Single Large Card --> */}
-              <Link
-                href="/"
+              <a
+                href="#"
                 className="flex flex-col w-full rounded-xl bg-gradient-to-b from-neutral-700 to-neutral-800/50 p-6 text-white"
               >
                 <img
@@ -246,7 +246,7 @@ const NavBar = () => {
                   technologies to transform entertainment through Sewasew
                   Multimedia with a team of 35+ engineers.
                 </p>
-              </Link>
+              </a>
 
               {/* <!-- Right Column: Three Stacked Cards --> */}
               <div className="flex flex-col gap-2">
@@ -403,7 +403,7 @@ const NavBar = () => {
               <MobileAccordionItem title="Services">
                 <div className="flex flex-col gap-3 my-4">
                   <a
-                    href=""
+                    href="#"
                     className="block p-3 rounded-lg bg-gradient-to-b from-neutral-700 to-neutral-800/50 "
                   >
                     <img src="./hybrid.svg" alt="" className="mb-4" />
