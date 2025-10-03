@@ -382,7 +382,7 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         {mobileOpen && (
-          <div className="absolute top-full left-0 w-full bg-neutral-950 border border-neutral-800 rounded-2xl mt-2 overflow-hidden transition-all duration-500 ease-in-out">
+          <div className="absolute top-full left-0 w-fit mx-2 bg-neutral-950 border border-neutral-800 rounded-2xl mt-2 overflow-hidden transition-all duration-500 ease-in-out">
             <ul className="flex flex-col p-4 gap-2">
               <li>
                 <a
